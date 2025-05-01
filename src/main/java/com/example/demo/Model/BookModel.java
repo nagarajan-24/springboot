@@ -1,9 +1,13 @@
 package com.example.demo.Model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-
+@Entity
+@Table(name = "book_model")
 public class BookModel {
-	
+	@Id
 	private int bookId;
 	private String bookName;
 	private String author;
